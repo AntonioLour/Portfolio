@@ -1,0 +1,376 @@
+/* MEDIA QUERIES = 320PX */
+
+
+
+
+
+/*CORPO*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*------------------------------MENU------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+#menu{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    position: fixed;
+    left: 10%;
+    padding-top: 5px;
+    z-index: 9999;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+
+
+
+/* TAMANHO DOS ICONES DAS REDES SOCIAIS */
+#instagram{
+    font-size: 22px;
+}
+#facebook{
+    font-size: 22px;
+}
+#twitter{
+   font-size: 22px;
+}
+
+/* HOVER DO MENU */
+li a:hover{
+    background-color: black;
+    color: white;
+}
+
+#instagram:hover{
+    background: -webkit-linear-gradient(#8a3ab9, #4c68d7, #cd486b, #fbad50, #fccc63, #bc2a8d, #e95950);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#facebook:hover{
+    color: #3b5998;
+    background-color: white;
+}
+#twitter:hover{
+    color: #00aced;
+    background-color: white;
+}
+
+/* POSICIONA AS REDES SOCIAIS NO CANTO DIREITO */
+.dir{
+    float: right;
+}
+
+@media screen and (max-width: 320px){
+  li a {
+    padding: 5px 9px;
+    font-size: 13px;
+  }
+  #instagram{
+    font-size: 13px;
+  }
+  #facebook{
+    font-size: 13px;
+  }
+  #twitter{
+   font-size: 13px; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------TELAS------------------------------*/
+
+/*------------------------------PERFIL------------------------------*/
+
+div #home{
+    background: white;
+    height: 100%;
+    width: 40%;
+    /*POSICIONA LOGO NO CENTRO*/
+    margin: auto;
+    padding: 3px;
+    padding-top: 60px;
+}
+
+
+/*IMAGEM*/
+div #home img{
+    width: 100%;
+    height: auto;
+}
+
+/* DEIXA TUDO OBEDECENDO  A CAIXA DE LIMITE DA HOME */
+* {
+    box-sizing: border-box;
+}
+
+.responsivaimg {
+    padding: 6px 6px;
+    width: 100%;
+}
+
+
+/*PARAGRAFO*/
+div #home p{
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+div #home a{
+    color: black;
+    text-decoration: none;
+}
+
+div #home a:hover{
+   color: #808080;
+}
+
+.responsivap {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+    .responsivap {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    div #home p{
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------GALERIA------------------------------*/
+/*CAIXA QUE CONTEM A GALERIA*/
+div #portifolio{
+    background: white;
+    height: 100%;
+    width: 60%;
+    /* POSICIONA NO CENTRO  DA TELA */
+    margin: auto;
+    padding: 10px;
+    padding-top: 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* CRIA COLUNAS */
+.column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+/* DEFINE O TAMANHO DA IMAGEM */
+.column img {
+    margin-top: 8px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* RESPNSIVIDADE PARA 800PX  -  DEIXA AS 4 MENORES */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 20%;
+        max-width: 50%;
+    }
+}
+
+/* RESPNSIVIDADE PARA 600PX  -  DEIXA 2 COLUNAS */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 40%;
+        max-width: 75%;
+    }
+}
+
+/* RESPNSIVIDADE PARA 600PX  -  DEIXA 2 COLUNAS */
+@media screen and (max-width: 320px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+/* DIMINUI A OPACIDADE DA IMAGEM QUE ESTA PASSANDO O MOUSE POR CIMA */
+.column img:hover{
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------TELA DA IMAGEM DA GALERIA------------------------------*/
+
+div #imgabt{
+    background: white;
+    height: 100%;
+    width: 35%;
+    /*POSICIONA LOGO NO CENTRO*/
+    margin: auto;
+    padding: 3px;
+    padding-top: 60px;
+}
+
+
+/*IMAGEM*/
+div #imgabt img{
+    width: 100%;
+    height: auto;
+}
+
+/* DEIXA TUDO OBEDECENDO  A CAIXA DE LIMITE DA HOME */
+* {
+    box-sizing: border-box;
+}
+
+.responsivimg {
+    padding: 6px 6px;
+    width: 100%;
+}
+
+
+/*PARAGRAFO*/
+div #imgabt p{
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+.responsivp {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+    .responsivp {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    div #imgabt p{
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------RODAPÉ------------------------------*/
+
+/*RODAPÉ*/
+footer{
+  /*DISTANCIA DO FOOTER PARA A BASE DA TELA*/
+    bottom:0;
+    width:80%;
+    background: white;
+    margin: auto;
+    padding: 5px;
+    position: relative;
+    border-top: 1px solid black;
+}
+
+/*TEXTO DO RODAPÉ*/
+footer p{
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 3px;
+}
+
+@media screen and (max-width: 320px) {
+    footer p{
+        font-size: 10px;
+    }
+}
