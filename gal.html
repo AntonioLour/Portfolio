@@ -11,6 +11,24 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- RESPONSIVA AS P QLQR TAMANHO DE TELA -->
     <meta name="viewport" content="width=device-width">
+
+
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- EFEITOS -->
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/marcagal.js"></script>
+    <script type="text/javascript" src="js/hover.js"></script>
+    <script type="text/javascript" src="js/fancybox.js"></script>
+
+    <!-- GALERIA FANCYBOX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+
+
+
     <title>Galeria</title>
   </head>
 
@@ -19,8 +37,8 @@
       <!--_________________________MENU________________________-->
       <div id="menu">
         <ul>
-          <li><a href="index.html"> PERFIL </a></li>
-          <li><a href="#portifolio"> GALERIA </a></li>
+          <li id="item1"><a href="index.html"> PERFIL </a></li>
+          <li id="item2"><a href="#portifolio"> GALERIA </a></li>
           <li class="dir"><a href="https://www.instagram.com/antonio_lour/" target="_blank" class="fa fa-instagram" id="instagram"></a></li>
           <li class="dir"><a href="https://www.facebook.com/antonio.lour" target="_blank" class="fa fa-facebook" id="facebook"></a></li>
           <li class="dir"><a href="https://twitter.com/antonio_lour" target="_blank" class="fa fa-twitter" id="twitter"></a></li>
@@ -30,30 +48,30 @@
 
       <!--_________________________PORTFOLIO________________________-->
       <div id="portifolio">
-        <div class="row"> 
+        <div class="row">
           <div class="column">
-            <a href="gal-htmls/img1.html" target="_blank"> <img src="img-gal/img 1.png"> </a>
-            <a href="gal-htmls/img2.html" target="_blank"> <img src="img-gal/img 2.gif"> </a>
-            <a href="gal-htmls/img3.html" target="_blank"> <img src="img-gal/img 3.png"> </a>
-            <a href="gal-htmls/img4.html" target="_blank"> <img src="img-gal/img 4.gif"> </a>  
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 1.png"> <img src="img-gal/img 1.png" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 2.gif"> <img src="img-gal/img 2.gif" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 3.png"> <img src="img-gal/img 3.png" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 4.gif"> <img src="img-gal/img 4.gif" alt=""> </a>
+          </div> 
+          <div class="column">
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 5.gif"> <img src="img-gal/img 5.gif" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 6.png"> <img src="img-gal/img 6.png" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 7.gif"> <img src="img-gal/img 7.gif" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 8.png"> <img src="img-gal/img 8.png" alt=""> </a>  
           </div>
           <div class="column">
-            <a href="gal-htmls/img5.html" target="_blank"> <img src="img-gal/img 5.gif"> </a>
-            <a href="gal-htmls/img6.html" target="_blank"> <img src="img-gal/img 6.png"> </a>
-            <a href="gal-htmls/img7.html" target="_blank"> <img src="img-gal/img 7.gif"> </a>
-            <a href="gal-htmls/img8.html" target="_blank"> <img src="img-gal/img 8.png"> </a>  
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 9.png"> <img src="img-gal/img 9.png" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 10.gif"> <img src="img-gal/img 10.gif" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 11.png"> <img src="img-gal/img 11.png" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 12.gif"> <img src="img-gal/img 12.gif" alt=""> </a>  
           </div>
           <div class="column">
-            <a href="gal-htmls/img9.html" target="_blank"> <img src="img-gal/img 9.png"> </a>
-            <a href="gal-htmls/img10.html" target="_blank"> <img src="img-gal/img 10.gif"> </a>
-            <a href="gal-htmls/img11.html" target="_blank"> <img src="img-gal/img 11.png"> </a>
-            <a href="gal-htmls/img12.html" target="_blank"> <img src="img-gal/img 12.gif"> </a>  
-          </div>
-          <div class="column">
-            <a href="gal-htmls/img13.html" target="_blank"> <img src="img-gal/img 13.gif"> </a>
-            <a href="gal-htmls/img14.html" target="_blank"> <img src="img-gal/img 14.png"> </a>
-            <a href="gal-htmls/img15.html" target="_blank"> <img src="img-gal/img 15.gif"> </a>
-            <a href="gal-htmls/img16.html" target="_blank"> <img src="img-gal/img 16.png"> </a>  
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 13.gif"> <img src="img-gal/img 13.gif" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 14.png"> <img src="img-gal/img 14.png" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 15.gif"> <img src="img-gal/img 15.gif" alt=""> </a>
+            <a data-fancybox="group" class="lightbox" href="img-gal/img 16.png"> <img src="img-gal/img 16.png" alt=""> </a>  
           </div>
         </div>
       </div>
